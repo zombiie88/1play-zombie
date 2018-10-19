@@ -7,7 +7,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
  
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = '$';
+const prefix = '1';
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
@@ -215,7 +215,7 @@ client.on('message', message => {
     client.user.setGame(argresult);
       message.channel.send(`**✅ تم تغيير الحالة بنجاح ${argresult}**`)
   } else
-     if (message.content === (adminprefix + "lev")) {
+     if (message.content === (adminprefix + "leev")) {
     message.guild.leave();
   } else
   if (message.content.startsWith(adminprefix + 'wt')) {
@@ -226,7 +226,7 @@ client.on('message', message => {
   client.user.setActivity(argresult , {type:'LISTENING'});
       message.channel.send(`**✅ تم تغيير الحالة بنجاح ${argresult}**`)
   } else
-  if (message.content.startsWith(adminprefix + 'strimng')) {
+  if (message.content.startsWith(adminprefix + 'st')) {
     client.user.setGame(argresult, "https://www.twitch.tv/idk");
       message.channel.send(`**✅ تم تغيير الحالة بنجاح **`)
   }
